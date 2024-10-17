@@ -1,4 +1,4 @@
-# CrowdSense: Real-time Wait Time Prediction for Popular Places
+# CrowdSense: Restaurant Waiting Time Estimator
 
 This project, **CrowdSense**, is a web application designed to help users predict wait times at various locations based on their popular times data. It integrates the Google Places API to retrieve detailed information about places, such as their name, address, and ratings, while also utilizing the populartimes API to analyze how busy a location is during different hours of the day.
 
@@ -45,8 +45,8 @@ This project successfully integrates Google’s data with popular times analysis
 
 ## References
 
-- **Google Maps Website JavaScript Developer**
+- **[Google Maps JavaScript API Documentation](https://developers.google.com/maps/documentation/javascript/)**
 - **[Flask Documentation](https://flask.palletsprojects.com/)**
 - **[Populartimes API GitHub](https://github.com/m-wrzr/populartimes)**
 - **[Digital Ocean Flask Tutorial](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-web-application-using-flask-and-python-3)**
-- **YouTube Video on Google Maps API Integration**
+- **[YouTube Video on Google Maps API Integration](https://youtu.be/uPhWSyRqQDA)**
