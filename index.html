@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CrowdSense</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map_project_style.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="header__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1>CrowdSense</h1>
+        <p class="project-cs-hero__info">
+          CrowdSense helps you estimate waiting times at popular locations based on Google Maps' Popular Times data.
+        </p>
+        <div id="map-container">
+          <input id="pac-input" class="controls" type="text" placeholder="Enter a location">
+          <div id="map"></div>
+          <div id="infowindow-content">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img id="place-photo1" class="restaurant-image" alt="Place photo">
+              </div>
+              <!-- Additional photo slides... -->
+            </div>
+
+            <h2 id="place-name" class="restaurant-name"></h2>
+            <div id="rating-content" class="rating">
+              <span id="place-rating" class="value"></span>
+              <span id="star-rating" class="stars"></span>
+              <span id="user_ratings_total"></span>
+              <span class="dot">•</span>
+              <span id="place-price-level"></span>
+            </div>
+
+            <div id="type-content" class="type">
+              <span>Estimated Wait Time</span>
+              <span class="dot">•</span>
+              <span id="waiting-time" class="waiting-time"></span>
+            </div>
+          </div>
+        </div>
+
+        <p>Estimated Waiting Time: <span id="waiting-time2"></span></p>
+
+        <div class="chart-container">
+          <canvas id="busyChart"></canvas>
+        </div>
+        <div class="day-selector">
+          <button onclick="showChart('mon')">Mon</button>
+          <!-- Additional day buttons... -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=Your_Google_API_Key&libraries=places"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
