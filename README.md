@@ -1,5 +1,7 @@
 # CrowdSense: Restaurant Waiting Time Estimator
 
+## **Try CrowdSense Live**: (https://shreyask.in/projects/crowd-sense)
+
 This project, **CrowdSense**, is a web application designed to help users predict wait times at various locations based on their popular times data. It integrates the Google Places API to retrieve detailed information about places, such as their name, address, and ratings, while also utilizing the populartimes API to analyze how busy a location is during different hours of the day.
 
 The core functionality lies in providing users with estimated wait times by mapping the busy percentage (derived from popular times data) to a specific wait time range. The app displays this data visually through interactive charts, making it easy for users to assess how crowded a place might be at different times. The system uses asynchronous programming to fetch data efficiently and caches results for up to ten days to minimize redundant API calls.
