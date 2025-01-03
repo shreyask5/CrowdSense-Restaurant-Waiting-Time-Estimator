@@ -1,54 +1,42 @@
-# CrowdSense: Restaurant Waiting Time Estimator
+# To-Do List App: Task Manager  
 
-## **Try CrowdSense Live**: (https://shreyask.in/projects/crowd-sense)
+This project, **To-Do List App**, is a React.js-based web application designed to streamline task management. With a sleek, intuitive interface and persistent data storage via local storage, it ensures users can efficiently manage their tasks. The app follows a modular structure, dividing functionalities across three components: TodoInput for adding tasks, TodoList for managing and displaying tasks, and TodoCard for editing and deleting individual tasks.  
 
-This project, **CrowdSense**, is a web application designed to help users predict wait times at various locations based on their popular times data. It integrates the Google Places API to retrieve detailed information about places, such as their name, address, and ratings, while also utilizing the populartimes API to analyze how busy a location is during different hours of the day.
+The app dynamically updates tasks in real-time, reflecting changes instantly with React’s state management. Local storage integration ensures tasks persist even after a page refresh, enhancing usability. The use of icons from Font Awesome and responsive design ensures the app is visually appealing and accessible across devices.
 
-The core functionality lies in providing users with estimated wait times by mapping the busy percentage (derived from popular times data) to a specific wait time range. The app displays this data visually through interactive charts, making it easy for users to assess how crowded a place might be at different times. The system uses asynchronous programming to fetch data efficiently and caches results for up to ten days to minimize redundant API calls.
+## Table of Contents  
 
-The app is particularly useful for users who want to avoid long waits at popular locations, helping them plan their visits during less busy times. With its integration of Google Maps and the ability to search for any place, the application combines convenience with practical time-saving insights.
+- [Introduction](#introduction)  
+- [Project Overview](#project-overview)  
+- [Features and Functionalities](#features-and-functionalities)  
+- [Technology Stack](#technology-stack)  
+- [Conclusion](#conclusion)  
 
-## Table of Contents
+## Introduction  
 
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Features and Functionalities](#features-and-functionalities)
-- [Technology Stack](#technology-stack)
-- [Conclusion](#conclusion)
-- [References](#references)
+This project aims to provide users with an efficient way to manage daily tasks through an intuitive, easy-to-use to-do list application built with React.js.  
 
-## Introduction
+## Project Overview  
 
-This project aims to assist users in predicting wait times at popular locations by integrating data from Google Places and using advanced asynchronous programming to provide real-time predictions. The project demonstrates the capabilities of web-based applications to streamline decision-making for individuals by presenting up-to-date wait-time data.
+The To-Do List App simplifies task management with a modular and scalable structure. It enables users to add, edit, and delete tasks while ensuring persistent data storage with React’s local storage integration.  
 
-## Project Overview
+## Features and Functionalities  
 
-CrowdSense is designed to help users predict wait times at various locations using popular times data. With a user-friendly interface and integration with Google Places and populartimes API, it provides users with actionable insights into when a place might be crowded, helping them avoid long waits.
+- **Add, Edit, and Delete Tasks:** Simple task management options.  
+- **Persistent Data:** Saves tasks in local storage for later access.  
+- **Dynamic Updates:** Reflects changes instantly using React’s state and props.  
+- **Componentized Structure:**  
+  - **TodoInput:** Handles user input and task addition.  
+  - **TodoList:** Manages and displays tasks.  
+  - **TodoCard:** Handles editing and deletion of individual tasks.  
+- **Responsive Design:** Ensures compatibility across devices.  
 
-## Features and Functionalities
+## Technology Stack  
 
-- **Real-time Wait Time Estimation**: Fetches current wait times using the popular times data of a location and converts the busy percentage into a practical wait time range.
-- **Google Places Integration**: Users can search for places via the integrated Google Maps interface, which provides place details such as name, rating, and photos.
-- **Asynchronous Data Fetching**: Uses asynchronous requests for fetching data from the Google Places API to provide fast and non-blocking user experiences.
-- **Busy Chart Visualization**: Displays busy hours data in an interactive chart, allowing users to visualize how crowded a place may be at different times of the day.
-- **Automatic Caching**: Results are cached for ten days to optimize API usage and reduce redundant requests.
+- **Frontend:** React.js, Font Awesome (for icons), CSS (for styling).  
+- **State Management:** React’s useState and useEffect hooks.  
+- **Storage:** Browser local storage for persistence.  
 
-## Technology Stack
+## Conclusion  
 
-- **Frontend**: HTML, CSS, JavaScript (integrated with Google Maps and Google Places API for search and location details).
-- **Backend**: Flask (Python) and asynchronous programming with `aiohttp` for non-blocking requests.
-- **Database**: In-memory cache (expandable to Redis in production) via `aiocache`.
-- **Version Control**: Git for source code management.
-- **APIs**: Google Places API, populartimes API for fetching and processing popular times data.
-
-## Conclusion
-
-This project successfully integrates Google’s data with popular times analysis to provide users with actionable information about wait times, allowing them to plan visits more efficiently. By using asynchronous programming, the system is highly responsive and efficient, delivering quick, real-time results to improve user experience.
-
-## References
-
-- **[Google Maps JavaScript API Documentation](https://developers.google.com/maps/documentation/javascript/)**
-- **[Flask Documentation](https://flask.palletsprojects.com/)**
-- **[Populartimes API GitHub](https://github.com/m-wrzr/populartimes)**
-- **[Digital Ocean Flask Tutorial](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-web-application-using-flask-and-python-3)**
-- **[YouTube Video on Google Maps API Integration](https://youtu.be/uPhWSyRqQDA)**
+The To-Do List App is a practical example of building dynamic and scalable React applications. It demonstrates modular design, state management, and local storage usage for persistent data. Perfect for individuals looking to organize their daily tasks efficiently.  
