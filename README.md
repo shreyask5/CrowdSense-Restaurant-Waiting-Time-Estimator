@@ -52,3 +52,60 @@ This project successfully integrates Google’s data with popular times analysis
 - **[Populartimes API GitHub](https://github.com/m-wrzr/populartimes)**
 - **[Digital Ocean Flask Tutorial](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-web-application-using-flask-and-python-3)**
 - **[YouTube Video on Google Maps API Integration](https://youtu.be/uPhWSyRqQDA)**
+
+
+
+
+## Change Log
+
+This changelog outlines key updates and improvements made between **Version 1** and **Version 2** of the CrowdSense Flask backend API.
+
+---
+
+## [Version 1.1] - *Improved Wait Time Categorization & Readability*
+**Date:** April 2025  
+**Status:** ✅ Current Version
+
+### Enhancements
+- **Wait Time Output:**  
+  Changed from numeric levels (`0`, `1`, `2`...) to **human-readable strings** like `"0-5 minutes"`, `"5-10 minutes"`, etc., enhancing user understanding.
+  
+- **Code Readability Improvements:**
+  - Improved spacing and comments for clarity.
+  - Reorganized mapping logic inside `if popular_times_data` block.
+  - Used shorter day-name keys (`mon`, `tue`, ...) in `converted_data`.
+
+- **Debug Mode:**
+  - Set `debug=True` in `app.run()` for development convenience.
+
+### 🛠 Technical Changes
+- **Global API Key Access:**
+  - Explicit use of `global API_KEY` inside `fetch_place_details()` for clarity (though not functionally necessary here).
+
+- **Refactored Comments:**
+  - Clarified usage of async functions and blocking populartimes call.
+  - Specified cache duration in seconds (`864000` = 10 days).
+
+---
+
+## [Version 1] - *Initial Release*
+**Date:** Oct 2024  
+**Status:** 🕘 Legacy Version
+
+### 🧪 Key Features
+- Initial implementation of:
+  - Flask async route for `/projects/api2/`
+  - Integration with Google Places API and `populartimes`
+  - In-memory caching using `aiocache`
+  - Timezone awareness using `pytz` (Asia/Kolkata)
+  
+- Busy percentage mapping to numeric levels (0–5) for estimating wait times.
+
+---
+
+## Next Steps
+- [ ] Optimize the blocking `populartimes.get_id` call (move to thread or worker).
+- [ ] Add Redis support for caching in production.
+- [ ] Implement API authentication or key obfuscation.
+- [ ] Add frontend toggle to show raw vs. estimated data.
+
