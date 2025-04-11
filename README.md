@@ -64,7 +64,7 @@ This changelog outlines key updates and improvements made between **Version 1** 
 
 ## [Version 1.1] - *Improved Wait Time Categorization & Readability*
 **Date:** April 2025  
-**Status:** ✅ Current Version
+**Status:** Current Version
 
 ### Enhancements
 - **Wait Time Output:**  
@@ -78,7 +78,7 @@ This changelog outlines key updates and improvements made between **Version 1** 
 - **Debug Mode:**
   - Set `debug=True` in `app.run()` for development convenience.
 
-### 🛠 Technical Changes
+### Technical Changes
 - **Global API Key Access:**
   - Explicit use of `global API_KEY` inside `fetch_place_details()` for clarity (though not functionally necessary here).
 
@@ -90,9 +90,9 @@ This changelog outlines key updates and improvements made between **Version 1** 
 
 ## [Version 1] - *Initial Release*
 **Date:** Oct 2024  
-**Status:** 🕘 Legacy Version
+**Status:** Legacy Version
 
-### 🧪 Key Features
+### Key Features
 - Initial implementation of:
   - Flask async route for `/projects/api2/`
   - Integration with Google Places API and `populartimes`
